@@ -5,20 +5,44 @@ import {Test, console} from "forge-std/Test.sol";
 import {Mints} from "../src/Mints.sol";
 
 contract MintsTest is Test {
-    Mints public mints;
+    Mints mints;
 
     function setUp() public {
         mints = new Mints();
-        mints.setNumber(0);
     }
 
-    function test_Increment() public {
-        mints.increment();
-        assertEq(mints.number(), 1);
+    function testMint() public {
+        address user = address(0x123);
+
+        // Simulate sending a transaction from the user
+        vm.startPrank(user);
+        
+        // Call the mint function
+        mints.mint();
+
+        // Check that the event was emitted
+        vm.expectEmit(true, true, false, true);
+        emit Minted(user);
+        
+        // Call mint again to check if it emits again
+        mints.mint();
+        
+        vm.stopPrank();
     }
 
-    function testFuzz_SetNumber(uint256 x) public {
-        mints.setNumber(x);
-        assertEq(mints.number(), x);
+    function testMintEvent() public {
+        address user = address(0x123);
+
+        // Simulate sending a transaction from the user
+        vm.startPrank(user);
+        
+        // Expecting an event to be emitted
+        vm.expectEmit(true, true, false, true);
+        emit Minted(user);
+        
+        // Call the mint function
+        mints.mint();
+        
+        vm.stopPrank();
     }
 }
