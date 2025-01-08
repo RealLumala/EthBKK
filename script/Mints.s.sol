@@ -17,3 +17,7 @@ contract MintsScript is Script {
         vm.stopBroadcast();
     }
 }
+
+
+//This the mint launch script.
+//Change all yarn packages to the stable versions.
