@@ -1,5 +1,7 @@
 import { useAccount, useConnect, useDisconnect } from 'wagmi';
 
+
+//changes to be made with viem
 function ConnectWallet() {
     const { connect, connectors } = useConnect();
     const { disconnect } = useDisconnect();
