@@ -8,3 +8,4 @@ test('renders learn react link', () => {
 });
 
 // Testing in-app context & Views
+// allign the changes to context
