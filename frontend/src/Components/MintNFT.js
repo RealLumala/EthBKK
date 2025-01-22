@@ -1,6 +1,7 @@
 import { useContract, useSigner } from 'wagmi';
 import MyContractABI from '../abi/MyContract.json';
 
+//kept fully private
 const contractAddress = 'YOUR_CONTRACT_ADDRESS';
 
 function MintNFT() {
