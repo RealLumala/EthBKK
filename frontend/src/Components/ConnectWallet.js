@@ -23,3 +23,7 @@ function ConnectWallet() {
 }
 
 export default ConnectWallet;
+
+
+
+// samples drawn from Meteor
