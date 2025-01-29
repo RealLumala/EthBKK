@@ -28,3 +28,4 @@ export default ConnectWallet;
 
 // samples drawn from Meteor
 // Tag @RealLumala
+// Borrowed from Rainbow
