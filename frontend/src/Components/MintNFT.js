@@ -4,6 +4,7 @@ import MyContractABI from '../abi/MyContract.json';
 //kept fully private
 const contractAddress = 'YOUR_CONTRACT_ADDRESS';
 
+//oNFT minting function
 function MintNFT() {
     const { data: signer } = useSigner();
     const contract = useContract({
