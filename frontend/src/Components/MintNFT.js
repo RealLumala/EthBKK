@@ -23,4 +23,3 @@ function MintNFT() {
 export default MintNFT;
 
 
-// collective figma designs
