@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 
-//contracts to soon rely on named imports
+// contracts to soon rely on named imports
 contract Mints {
     event Minted(address indexed to);
 
@@ -11,3 +11,5 @@ contract Mints {
     }
 }
 
+// q Is it having many named imports?
+// a No, it is not having any named imports yet from OZ.
