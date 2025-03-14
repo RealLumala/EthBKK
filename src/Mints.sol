@@ -13,3 +13,5 @@ contract Mints {
 
 // q Is it having many named imports?
 // a No, it is not having any named imports yet from OZ.
+
+// q is it compliant with upcoming ERCs like 7777 and 7807
