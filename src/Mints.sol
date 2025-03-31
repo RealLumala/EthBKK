@@ -11,7 +11,8 @@ contract Mints {
     }
 
     function delayRelease() external {
-        // do nothing
+        // Wait until initiator calla are made
+        // follow thru with all commands
     }
 }
 
